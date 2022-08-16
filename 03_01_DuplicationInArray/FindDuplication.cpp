@@ -58,6 +58,7 @@ bool duplicate(int numbers[], int length, int* duplication)
 }
 
 // ====================测试代码====================
+// 判断数字number是否在数组array中
 bool contains(int array[], int length, int number)
 {
     for(int i = 0; i < length; ++i)
@@ -69,7 +70,7 @@ bool contains(int array[], int length, int number)
     return false;
 }
 
-void test(char* testName, int numbers[], int lengthNumbers, int expected[], int expectedExpected, bool validArgument)
+void test(char* testName, int numbers[], int lengthNumbers, int array[], int length, bool validArgument)
 {
     printf("%s begins: ", testName);
 
@@ -80,7 +81,7 @@ void test(char* testName, int numbers[], int lengthNumbers, int expected[], int 
     {
         if(validArgument)
         {
-            if(contains(expected, expectedExpected, duplication))
+            if(contains(array, length, duplication))
                 printf("Passed.\n");
             else
                 printf("FAILED.\n");
