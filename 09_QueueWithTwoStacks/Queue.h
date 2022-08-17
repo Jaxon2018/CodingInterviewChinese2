@@ -17,10 +17,11 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 // 和deleteHead，分别完成在队列尾部插入结点和在队列头部删除结点的功能。
 
 #pragma once
-#include <stack>
-#include <exception>
+#include <stack>      // std::stack
+#include <exception>  // 栈和异常
+// #include <iostream>       // std::cout         
 
-using namespace std;
+using namespace std;  // std命名空间
 
 template <typename T> class CQueue
 {

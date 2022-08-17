@@ -29,7 +29,7 @@ void Test(char actual, char expected)
 
 int main(int argc, char* argv[])
 {
-    CQueue<char> queue;
+    CQueue<char> queue;  // 实例化 char 类型的 队列对象
 
     queue.appendTail('a');
     queue.appendTail('b');

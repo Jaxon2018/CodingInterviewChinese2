@@ -1,7 +1,7 @@
 struct ListNode{
     int m_nValue;
     ListNode* m_pNext;
-    ListNode(int x):m_nValue(x), m_pNext(nullptr){}
+    ListNode(int x):m_nValue(x), m_pNext(nullptr){}//没有分号；
 }
 
 void AddToTail(ListNode** pHead, int value)
