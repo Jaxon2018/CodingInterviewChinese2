@@ -19,7 +19,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 // 时得到最大的乘积18。
 
 #include <iostream>
-#include <cmath>
+#include <cmath>      /* pow */
 
 // ====================动态规划====================
 int maxProductAfterCutting_solution1(int length)
@@ -77,6 +77,7 @@ int maxProductAfterCutting_solution2(int length)
 
     int timesOf2 = (length - timesOf3 * 3) / 2;
 
+    // pow (7.0, 3.0): 7 ^ 3 
     return (int) (pow(3, timesOf3)) * (int) (pow(2, timesOf2));
 }
 
