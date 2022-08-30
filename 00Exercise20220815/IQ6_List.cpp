@@ -63,6 +63,7 @@ struct ListNode{
     ListNode(int x):m_nValue(x), m_pNext(nullptr){}
 }
 
+// myown first solution
 void ReverseList(ListNode** pHead, int value)
 {
     if(pHead == nullptr || *pHead == nullptr)
@@ -78,14 +79,14 @@ void ReverseList(ListNode** pHead, int value)
         {
             pTmpNode = pNode;
             pNode = pNode->m_pNext;
-            pTmpNode == pNode->m_pNext;
+            pTmpNode = pNode->m_pNext;
         }
         ListNode* pTmpNode = nullptr;
         *pHead = pNode; //change the position of head node
     }    
 }
 
-//Carl Answer myown
+// Carl Answer myown
 void ReverseList(ListNode** pHead, int value)
 {
     if(pHead == nullptr || *pHead == nullptr)
@@ -153,7 +154,7 @@ public:
     }
 };
 
-//Carl STD Answer
+// Carl STD Answer
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
